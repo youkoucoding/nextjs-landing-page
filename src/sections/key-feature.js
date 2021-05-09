@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
@@ -45,7 +44,7 @@ const data = [
 
 export default function KeyFeature() {
   return (
-   <h1>Key Feature</h1>
+    <h1>Key Feature</h1>
   );
 }
 
