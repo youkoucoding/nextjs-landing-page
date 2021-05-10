@@ -14,7 +14,7 @@ export default function SectionHeader({ title, slogan, isWhite }) {
           opacity: isWhite ? 0.7 : 1,
         }}
       >
-        {slogon}
+        {slogan}
       </Text>
       <Heading
         as='h2'

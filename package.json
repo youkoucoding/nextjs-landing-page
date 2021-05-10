@@ -8,14 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.0",
     "next": "10.2.0",
     "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "rc-drawer": "^4.3.1",
     "react": "17.0.2",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-modal-video": "^1.2.6",
     "react-scroll": "^1.8.2",
-    "theme-ui": "^0.8.4"
+    "react-stickynode": "^3.0.5",
+    "theme-ui": "^0.8.4",
+    "typeface-dm-sans": "^1.1.13"
   }
 }

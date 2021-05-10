@@ -26,6 +26,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 [react-icons - npm](https://www.npmjs.com/package/react-icons)
 [react-custom-scrollbars - npm](https://www.npmjs.com/package/react-custom-scrollbars)
 [react-stickynode - npm](https://www.npmjs.com/package/react-stickynode)
+[react-modal-video - npm](https://www.npmjs.com/package/react-modal-video)
+[typeface-dm-sans - npm](https://www.npmjs.com/package/typeface-dm-sans)
+
+[next-compose-plugins - npm](https://www.npmjs.com/package/next-compose-plugins)
+[next-optimized-images - npm](https://www.npmjs.com/package/next-optimized-images)
 
 ## Deploy on Vercel
 

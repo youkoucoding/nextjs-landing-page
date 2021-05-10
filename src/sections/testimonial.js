@@ -1,9 +1,8 @@
-/** @jsx jsx */
 import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/avatar2.png';
@@ -77,31 +76,31 @@ const responsive = {
 };
 
 const carouselParams = {
-  additionalTransfrom:0,
-  arrows:false,
-  autoPlaySpeed:3000,
-  centerMode:false,
-  className:"",
-  containerClass:"carousel-container",
-  customButtonGroup:<ButtonGroup />,
-  dotListClass:"",
+  additionalTransfrom: 0,
+  arrows: false,
+  autoPlaySpeed: 3000,
+  centerMode: false,
+  className: "",
+  containerClass: "carousel-container",
+  customButtonGroup: <ButtonGroup />,
+  dotListClass: "",
   draggable: true,
-  focusOnSelect:false,
-  infinite:true,
-  itemClass:"",
+  focusOnSelect: false,
+  infinite: true,
+  itemClass: "",
   keyBoardControl: true,
-  minimumTouchDrag:80,
+  minimumTouchDrag: 80,
   renderButtonGroupOutside: true,
-  renderDotsOutside:false,
-  responsive:responsive,
-  showDots:false,
-  sliderClass:"",
-  slidesToSlide:1,
-}
+  renderDotsOutside: false,
+  responsive: responsive,
+  showDots: false,
+  sliderClass: "",
+  slidesToSlide: 1,
+};
 
 export default function TestimonialCard() {
   return (
-   <h1>Testimonial Card</h1>
+    <h1>Testimonial Card</h1>
   );
 }
 

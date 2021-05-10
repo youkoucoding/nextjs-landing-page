@@ -24,7 +24,7 @@ export default function Drawer({
         className={`drawer ${className || ''}`.trim()}
         width={width}
         placement={placement}
-        handler={fasle}
+        handler={false}
         lelve={null}
         duration={`0.4s`}
         {...props}
