@@ -6,6 +6,7 @@ import Performance from 'assets/key-feature/performance.svg';
 import Partnership from 'assets/key-feature/partnership.svg';
 import Subscription from 'assets/key-feature/subscription.svg';
 import Support from 'assets/key-feature/support.svg';
+import { IoMdEasel } from 'react-icons/io';
 
 const data = [
   {
@@ -44,7 +45,25 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <h1>Key Feature</h1>
+    <section sx={{ variant: 'section.KeyFeature' }} id='feature'>
+      <Container>
+        <SectionHeader
+          slogon='Whats the function'
+          title='Meet the feature of our product.'
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <FeatureCardColumn
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              title={item.title}
+              text={item.text}
+            />
+          ))}
+        </Grid>
+      </Container>
+    </section>
   );
 }
 

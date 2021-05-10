@@ -25,6 +25,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 [rc-drawer - npm](https://www.npmjs.com/package/rc-drawer)
 [react-icons - npm](https://www.npmjs.com/package/react-icons)
 [react-custom-scrollbars - npm](https://www.npmjs.com/package/react-custom-scrollbars)
+[react-stickynode - npm](https://www.npmjs.com/package/react-stickynode)
 
 ## Deploy on Vercel
 
