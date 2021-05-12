@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';

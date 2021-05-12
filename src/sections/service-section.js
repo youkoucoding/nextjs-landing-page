@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
-import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
-import { keyframes } from '@emotion/react';
+/** @jsx jsx */
+import {
+  jsx,
+  Container,
+  Box,
+  Grid,
+  Text,
+  Heading,
+  Button,
+  Image,
+} from 'theme-ui';
+import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
-import { IoIosOpen, IoIosPlay } from 'react-icons/io';
+import { IoIosPlay } from 'react-icons/io';
 
 import ServiceThumb from 'assets/service-thumb.png';
 import shapePattern from 'assets/shape-pattern1.png';
@@ -35,41 +45,42 @@ const data = {
 };
 
 export default function ServiceSection() {
-
+  // modal popup video handler
+  const [videoOpen, setVideoOpen] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     setVideoOpen(true);
   };
-
-  const [videoOpen, setVideoOpen] = useState(false);
-
   return (
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt='Thumbnail' />
+          <Image src={ServiceThumb} alt="Thumbnail" />
           <Button
             sx={styles.videoBtn}
             onClick={handleClick}
-            aria-label='Play Button'
+            aria-label="Play Button"
           >
             <span>
               <IoIosPlay />
             </span>
           </Button>
+
           <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt='shape' />
+            <Image src={shapePattern} alt="Shape" />
           </Box>
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
+
           <Grid sx={styles.grid}>
-            {data.features.map((feature) => (
-              <Box sx={styles.card} key={feature.id}>
-                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
+            {data.features.map((item) => (
+              <Box sx={styles.card} key={item.id}>
+                <Image src={item.imgSrc} alt={item.altText} sx={styles.icon} />
+
                 <Box sx={styles.wrapper}>
-                  <Heading sx={styles.wrapper.title}>{feature.title}</Heading>
-                  <Text sx={styles.wrapper.subTitle}>{feature.subTitle}</Text>
+                  <Heading sx={styles.wrapper.title}>{item.title}</Heading>
+                  <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
                 </Box>
               </Box>
             ))}
@@ -77,9 +88,9 @@ export default function ServiceSection() {
         </Box>
       </Container>
       <ModalVideo
-        channel='youtube'
+        channel="youtube"
         isOpen={videoOpen}
-        videoId='iGBERMGMIvc'
+        videoId="ZNA9rmDsYVE"
         onClose={() => setVideoOpen(false)}
       />
     </section>

@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
@@ -6,7 +7,6 @@ import Performance from 'assets/key-feature/performance.svg';
 import Partnership from 'assets/key-feature/partnership.svg';
 import Subscription from 'assets/key-feature/subscription.svg';
 import Support from 'assets/key-feature/support.svg';
-import { IoMdEasel } from 'react-icons/io';
 
 const data = [
   {
@@ -45,12 +45,13 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section sx={{ variant: 'section.KeyFeature' }} id='feature'>
+    <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogon='Whats the function'
-          title='Meet the feature of our product.'
+          slogan="Whats the function"
+          title="Meet the feature of product"
         />
+
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn
