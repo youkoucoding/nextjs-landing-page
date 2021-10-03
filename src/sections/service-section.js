@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-/** @jsx jsx */
 import {
   jsx,
   Container,
@@ -10,7 +9,7 @@ import {
   Button,
   Image,
 } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
@@ -30,16 +29,14 @@ const data = {
       imgSrc: Smart,
       altText: 'Smart Features',
       title: 'Smart Features',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+      text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },
     {
       id: 2,
       imgSrc: Secure,
       altText: 'Secure Contents',
       title: 'Secure Contents',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+      text: 'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },
   ],
 };
@@ -55,11 +52,11 @@ export default function ServiceSection() {
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Image src={ServiceThumb} alt='Thumbnail' />
           <Button
             sx={styles.videoBtn}
             onClick={handleClick}
-            aria-label="Play Button"
+            aria-label='Play Button'
           >
             <span>
               <IoIosPlay />
@@ -67,7 +64,7 @@ export default function ServiceSection() {
           </Button>
 
           <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="Shape" />
+            <Image src={shapePattern} alt='Shape' />
           </Box>
         </Box>
         <Box sx={styles.contentBox}>
@@ -88,9 +85,9 @@ export default function ServiceSection() {
         </Box>
       </Container>
       <ModalVideo
-        channel="youtube"
+        channel='youtube'
         isOpen={videoOpen}
-        videoId="ZNA9rmDsYVE"
+        videoId='ZNA9rmDsYVE'
         onClose={() => setVideoOpen(false)}
       />
     </section>
